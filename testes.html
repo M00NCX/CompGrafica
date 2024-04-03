@@ -145,15 +145,55 @@
 
         <polygon points="50,50 150,1 250,50" fill="#43291f" stroke="black" />
       </g>
+
+      <!--PASSARINHO-->
+      <g transform="scale(0.2)">
+        <g transform="translate(3500,500)">
+          <path
+            d="M 500 200 A 150 100 0 0 1 750 200"
+            stroke="black"
+            stroke-width="5"
+            fill="none"
+          />
+          <path
+            d="M 505 200 A 150 100 0 0 0 250 200"
+            stroke="black"
+            stroke-width="5"
+            fill="none"
+          />
+        </g>
+      </g>
+      <g transform="scale(0.2)">
+        <g transform="translate(3800,300)">
+          <path
+            d="M 500 200 A 150 100 0 0 1 750 200"
+            stroke="black"
+            stroke-width="5"
+            fill="none"
+          />
+          <path
+            d="M 505 200 A 150 100 0 0 0 250 200"
+            stroke="black"
+            stroke-width="5"
+            fill="none"
+          />
+        </g>
+      </g>
       <!--ÁRVORE COM MAÇÃ-->
       <g transform="translate(700,50)">
         <rect x="175" y="190" width="50" height="100" fill="brown" />
+        <defs>
+          <linearGradient id="gradiente" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="green" />
+            <stop offset="100%" stop-color="#024B14" />
+          </linearGradient>
+        </defs>
 
-        <circle cx="200" cy="150" r="50" fill="green" />
-        <circle cx="180" cy="120" r="50" fill="green" />
-        <circle cx="230" cy="120" r="50" fill="green" />
-        <circle cx="230" cy="150" r="50" fill="green" />
-        <circle cx="170" cy="150" r="50" fill="green" />
+        <circle cx="200" cy="150" r="50" fill="url(#gradiente)" />
+        <circle cx="180" cy="120" r="50" fill="url(#gradiente)" />
+        <circle cx="230" cy="120" r="50" fill="url(#gradiente)" />
+        <circle cx="230" cy="150" r="50" fill="url(#gradiente)" />
+        <circle cx="170" cy="150" r="50" fill="url(#gradiente)" />
         <circle cx="250" cy="150" r="15" fill="red" />
         <circle cx="240" cy="110" r="15" fill="red" />
         <circle cx="190" cy="110" r="15" fill="red" />
